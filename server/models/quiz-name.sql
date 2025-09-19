@@ -1,0 +1,5 @@
+CREATE TABLE quiz_name(
+    id BIGSERIAL NOT NULL,
+    name VARCHAR(255) PRIMARY KEY
+    
+ );

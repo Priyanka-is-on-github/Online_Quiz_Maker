@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.boxcontainer{
+    color:white;
+  }
+.active{
+    
+    padding:2px;
+    border-radius:5%;
+    background-color: 'white';
+    color:'blue';
+    box-shadow: 'rgba(5,5,5,0.08) 0px 2px 20px 0px',
+   
+  }
+
+ 
