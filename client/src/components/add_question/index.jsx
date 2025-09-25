@@ -163,8 +163,8 @@ function AddQuestion({ quizName }) {
   }, [quizName]);
 
   return (
-    <Layout>
-      <Container maxWidth="lg" sx={{ py: 3 }}>
+ 
+      <Container maxWidth="lg" sx={{ py: 3 , }}>
         {/* Header Section */}
         <Box sx={{ 
           display: 'flex', 
@@ -172,7 +172,8 @@ function AddQuestion({ quizName }) {
           alignItems: 'center',
           flexDirection: { xs: 'column', sm: 'row' },
           gap: 2,
-          mb: 4
+          mb: 4,
+          
         }}>
           <Box>
             <Typography 
@@ -199,7 +200,7 @@ function AddQuestion({ quizName }) {
           
           <Button
             variant="outlined"
-            onClick={() => navigate("/create-quiz")}
+            onClick={() => navigate("/attend-quiz")}
             startIcon={<ArrowBackIcon />}
             color="primary"
             size={isMobile ? "small" : "medium"}
@@ -488,7 +489,7 @@ function AddQuestion({ quizName }) {
           </DialogActions>
         </Dialog>
       </Container>
-    </Layout>
+   
   );
 }
 

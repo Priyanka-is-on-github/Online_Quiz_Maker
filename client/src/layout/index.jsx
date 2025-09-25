@@ -15,6 +15,7 @@ export const Layout = ({ children }) => {
           background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.grey[100]} 100%)`,
           display: "flex",
           flexDirection: "column",
+           
         }}
       >
         <NavBar />
@@ -52,10 +53,11 @@ export const Layout = ({ children }) => {
             mt: 'auto',
             backgroundColor: theme.palette.primary.main,
             color: 'white',
-            textAlign: 'center'
+            textAlign: 'center',
+           
           }}
         >
-          <Box sx={{ maxWidth: 'sm', mx: 'auto' }}>
+          <Box sx={{ maxWidth: 'sm', mx: 'auto',  }}>
             <span>© {new Date().getFullYear()} QuizMaster. All rights reserved.</span>
           </Box>
         </Box>
