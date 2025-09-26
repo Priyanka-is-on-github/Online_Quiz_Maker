@@ -77,7 +77,7 @@ function AddQuestion({ quizName }) {
     
     try {
       const response = await fetch(
-        "http://localhost:2000/api/v1/submit-question",
+        "${import.meta.env.VITE_SERVER_URL}/api/v1/submit-question",
         {
           method: "POST",
           headers: {
@@ -120,7 +120,7 @@ function AddQuestion({ quizName }) {
     
     try {
       const response = await fetch(
-        `http://localhost:2000/api/v1/question-delete?id=${questionToDelete.id}&quizname=${quizName}`,
+        `${import.meta.env.VITE_SERVER_URL}/api/v1/question-delete?id=${questionToDelete.id}&quizname=${quizName}`,
         {
           method: "DELETE",
         }
@@ -144,7 +144,7 @@ function AddQuestion({ quizName }) {
   const fetchQuestions = async () => {
     try {
       const response = await fetch(
-        `http://localhost:2000/api/v1/questions/${quizName}`
+        `${import.meta.env.VITE_SERVER_URL}/api/v1/questions/${quizName}`
       );
 
       if (!response.ok) {

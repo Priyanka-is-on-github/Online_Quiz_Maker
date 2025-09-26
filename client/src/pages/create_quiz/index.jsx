@@ -47,7 +47,7 @@ function CreateQuiz() {
     setError("");
     
     try {
-      const response = await fetch("http://localhost:2000/api/v1/quizname", {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/v1/quizname`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

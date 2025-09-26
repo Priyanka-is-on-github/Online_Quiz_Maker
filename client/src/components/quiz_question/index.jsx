@@ -84,7 +84,7 @@ function QuizQuestions() {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://localhost:2000/api/v1/questions/${id}`
+          `${import.meta.env.VITE_SERVER_URL}/api/v1/questions/${id}`
         );
 
         if (!response.ok) {

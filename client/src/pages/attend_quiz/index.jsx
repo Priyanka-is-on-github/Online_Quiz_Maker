@@ -34,7 +34,7 @@ function AttendQuiz() {
   const fetchQuizNames = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:2000/api/v1/quizname");
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/v1/quizname`);
       
       if (!response.ok) {
         throw new Error(`Failed to fetch quizzes: ${response.status}`);
