@@ -77,9 +77,10 @@ function AddQuestion({ quizName }) {
     
     try {
       const response = await fetch(
-        "${import.meta.env.VITE_SERVER_URL}/api/v1/submit-question",
+        `${import.meta.env.VITE_SERVER_URL}/api/v1/submit-question`,
         {
           method: "POST",
+          credentials: 'include', // or 'same-origin' if same site
           headers: {
             "Content-type": "application/json",
           },

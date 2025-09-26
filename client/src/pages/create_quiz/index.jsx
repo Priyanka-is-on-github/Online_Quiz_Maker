@@ -49,6 +49,7 @@ function CreateQuiz() {
     try {
       const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/v1/quizname`, {
         method: "POST",
+        credentials: 'include', // or 'same-origin' if same site
         headers: {
           "Content-type": "application/json",
         },
