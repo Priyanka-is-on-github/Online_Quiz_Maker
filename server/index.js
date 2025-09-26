@@ -9,7 +9,7 @@ const router = require("./routes/quiz-routes");
 
 const PORT = 2000;
 const corsOptions = {
-  origin: ['https://online-quiz-maker-sand.vercel.app'], // allowed origin(s)
+  origin: ['https://online-quiz-maker-qunu.vercel.app'], // allowed origin(s)
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   credentials: true,
